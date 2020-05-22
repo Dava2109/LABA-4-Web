@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Четвертая лабораторная</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="">
+</head>
+<body>
+
+	<p><strong>Today</strong></p>
+
+	<script language="JavaScript">
+		var date = new Date();
+		var link = document.getElementsByTagName("link")[0];
+		
+		
+		if (date.getDay() == 0 || date.getDay() == 6)
+			link.setAttribute("href", "1.css");
+		else
+			link.setAttribute("href", "2.css");
+
+	</script>
+</body>
+</html>
